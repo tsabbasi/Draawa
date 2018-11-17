@@ -8,6 +8,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+//    var lastPoint = CGPoint.zero
+//    var color = UIColor.black
+//    var brushWidth: CGFloat = 10.0
+//    var swiped = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,7 +23,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
 
