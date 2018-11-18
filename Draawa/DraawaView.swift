@@ -9,6 +9,8 @@ import UIKit
 
 class DraawaView: UIView {
     
+    
+    
 //    var lastPoint = CGPoint.zero
 //    var swiped = false
     // above are from another tutorial
@@ -24,7 +26,7 @@ class DraawaView: UIView {
         // only recognize one touch
         self.isMultipleTouchEnabled = false
         
-        lineColor = UIColor.black
+        lineColor = UIColor.green
         lineWidth = 10
         
     }
@@ -33,10 +35,6 @@ class DraawaView: UIView {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         // set starting point to location of first touch
         let touch = touches.first
-        
-//        swiped = false
-//        lastPoint = touch.location(in: self)
-        
         startingPoint = touch?.location(in: self)
     }
     
@@ -68,17 +66,29 @@ class DraawaView: UIView {
         shapeLayer.fillColor = UIColor.clear.cgColor
         self.layer.addSublayer(shapeLayer)
         self.setNeedsDisplay()
+        
     }
     
     func clearScreen() {
         path.removeAllPoints()
         self.layer.sublayers = nil
         self.setNeedsDisplay()
+    }
+    
+    
+    @IBAction func blackStroke(_ sender: Any) {
         
+        lineColor = UIColor.black
+//        tintColor = lineColor.cgColor
+//        self.tintColorDidChange()
+//        drawShape()
         
     }
     
     
+    
+    
+        
     
     /*
     // Only override draw() if you perform custom drawing.
