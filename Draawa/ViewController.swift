@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     var lineContinuous = false
     
     
-    // getting location of initial touch
+    // user put finger on screen -> get location of initial touch
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
             return
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     }
     
     
-    // allows to draw lines along the defined path
+    // draw lines along defined path
     func drawLine(from startPoint: CGPoint, to endPoint: CGPoint) {
         UIGraphicsBeginImageContextWithOptions(view.frame.size, false, 0.0)
         
@@ -49,7 +49,7 @@ class ViewController: UIViewController {
     }
     
     
-    // when user drags finger on screen - draw continuous lines to follow finger movements
+    // user dragged finger on screen - draw continuous lines to follow finger movements
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
             return
@@ -61,7 +61,7 @@ class ViewController: UIViewController {
     }
     
     
-    // when user lifts finger - draw a point if line is not continous
+    // user lifted finger - draw a point if line is not continous
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         if !lineContinuous {
             drawLine(from: startingPoint, to: startingPoint)
@@ -78,7 +78,7 @@ class ViewController: UIViewController {
     }
   
     
-    // clear drawings on screen
+    // user tapped clear - clear drawings on screen
     @IBAction func clearDraawa(_ sender: Any) {
         draawaImageView.image = nil
     }

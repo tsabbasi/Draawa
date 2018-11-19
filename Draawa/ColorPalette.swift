@@ -1,11 +1,10 @@
 //
-//  Paint.swift
+//  ColorPalette.swift
 //  Draawa
 //
 //  Created by Tuba Abbasi on 11/18/18.
 //
 
-import Foundation
 import UIKit
 
 enum ColorPalette {
@@ -52,5 +51,5 @@ enum ColorPalette {
             return UIColor(red:0.12, green:0.12, blue:0.12, alpha:1.0)
         }
     }
-
+    
 }
