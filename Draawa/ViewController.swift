@@ -77,6 +77,7 @@ class ViewController: UIViewController {
             drawLine(from: startingPoint, to: startingPoint)
         }
     }
+
     
     
     @IBAction func colorSelected(_ sender: UIButton) {
@@ -85,8 +86,20 @@ class ViewController: UIViewController {
         }
         
         lineColor = selectedColor.color
-
     }
+  
+    @IBAction func clearDraawa(_ sender: Any) {
+        draawaImageView.image = nil
+    }
+    
+//    @IBAction func colorSelected(_ sender: UIButton) {
+//        guard let selectedColor = ColorPalette(tag: sender.tag) else {
+//            return
+//        }
+//
+//        lineColor = selectedColor.color
+//
+//    }
     
     
     

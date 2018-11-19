@@ -11,6 +11,7 @@ import UIKit
 enum ColorPalette {
     case green
     case biege
+    case purple
     case red
     case yellow
     case black
@@ -22,10 +23,12 @@ enum ColorPalette {
         case 2:
             self = .biege
         case 3:
-            self = .red
+            self = .purple
         case 4:
-            self = .yellow
+            self = .red
         case 5:
+            self = .yellow
+        case 6:
             self = .black
         default:
             return nil
@@ -38,6 +41,8 @@ enum ColorPalette {
             return UIColor(red:0.60, green:0.80, blue:0.71, alpha:1.0)
         case .biege:
             return UIColor(red:1.00, green:0.93, blue:0.69, alpha:1.0)
+        case .purple:
+            return UIColor(red:0.71, green:0.78, blue:0.98, alpha:1.0)
         case .red:
             return UIColor(red:0.99, green:0.44, blue:0.42, alpha:1.0)
         case .yellow:
