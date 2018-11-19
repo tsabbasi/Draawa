@@ -16,22 +16,28 @@ class ViewController: UIViewController {
     
     var lineColor = UIColor.black
     var lineWidth:CGFloat = 10
-    var touchPoint = CGPoint.zero
-    var swiped = false
-    //    var path:UIBezierPath!
-//    var startingPoint:CGPoint!
+    var startingPoint = CGPoint.zero
+    var lineContinuous = false
     
+    
+    // getting location of starting point
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         guard let touch = touches.first else {
             return
         }
-        swiped = false
-        touchPoint = touch.location(in: view)
+        lineContinuous = false
+        startingPoint = touch.location(in: view)
     }
     
+    
     func drawLine(from startPoint: CGPoint, to endPoint: CGPoint) {
-        // 1
-        UIGraphicsBeginImageContext(view.frame.size)
+        
+//        let renderer = UIGraphicsImageRenderer
+//        UIGraphicsBeginImageContext(view.frame.size)
+        UIGraphicsBeginImageContextWithOptions(view.frame.size, false, 0.0)
+        
+        // unwrapping optional
+        // getting
         guard let context = UIGraphicsGetCurrentContext() else {
             return
         }
@@ -42,14 +48,12 @@ class ViewController: UIViewController {
         context.addLine(to: endPoint)
 
         context.setLineCap(.round)
-        context.setBlendMode(.normal)
         context.setLineWidth(lineWidth)
         context.setStrokeColor(lineColor.cgColor)
         
         context.strokePath()
         
         draawaImageView.image = UIGraphicsGetImageFromCurrentImageContext()
-//        tempImageView.alpha = opacity
         UIGraphicsEndImageContext()
     }
     
@@ -58,19 +62,19 @@ class ViewController: UIViewController {
             return
         }
         
-        swiped = true
+        lineContinuous = true
         let currentPoint = touch.location(in: view)
-        drawLine(from: touchPoint, to: currentPoint)
-        
-        // 7 ---> change variable name
-        touchPoint = currentPoint
+        drawLine(from: startingPoint, to: currentPoint)
+
+        startingPoint = currentPoint
     }
     
     
     override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        if !swiped {
-            // draw a single point
-            drawLine(from: touchPoint, to: touchPoint)
+        
+        // when user taps screen - draw a point
+        if !lineContinuous {
+            drawLine(from: startingPoint, to: startingPoint)
         }
     }
     
