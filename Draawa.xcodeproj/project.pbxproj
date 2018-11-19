@@ -14,7 +14,6 @@
 		C45599EF21A0779300055DFB /* Draawa.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C45599ED21A0779300055DFB /* Draawa.xcdatamodeld */; };
 		C45599F121A0779300055DFB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C45599F021A0779300055DFB /* Assets.xcassets */; };
 		C45599F421A0779300055DFB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45599F221A0779300055DFB /* LaunchScreen.storyboard */; };
-		C45599FC21A079F400055DFB /* DraawaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45599FB21A079F400055DFB /* DraawaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		C45599F021A0779300055DFB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C45599F321A0779300055DFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C45599F521A0779300055DFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C45599FB21A079F400055DFB /* DraawaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraawaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +60,6 @@
 			children = (
 				C45599E621A0779300055DFB /* AppDelegate.swift */,
 				C45599E821A0779300055DFB /* ViewController.swift */,
-				C45599FB21A079F400055DFB /* DraawaView.swift */,
 				C45599EA21A0779300055DFB /* Main.storyboard */,
 				C45599F021A0779300055DFB /* Assets.xcassets */,
 				C45599F221A0779300055DFB /* LaunchScreen.storyboard */,
@@ -147,7 +144,6 @@
 				C45599EF21A0779300055DFB /* Draawa.xcdatamodeld in Sources */,
 				C4192A1A21A242940066B75E /* ColorPalette.swift in Sources */,
 				C45599E921A0779300055DFB /* ViewController.swift in Sources */,
-				C45599FC21A079F400055DFB /* DraawaView.swift in Sources */,
 				C45599E721A0779300055DFB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

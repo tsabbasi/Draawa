@@ -16,6 +16,7 @@ enum ColorPalette {
     case yellow
     case black
     
+    // UIbutton tags determine which color has been selected
     init?(tag: Int) {
         switch tag {
         case 1:
@@ -31,7 +32,7 @@ enum ColorPalette {
         case 6:
             self = .black
         default:
-            return nil
+            self = .black
         }
     }
     
