@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C4192A1A21A242940066B75E /* ColorPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4192A1921A242940066B75E /* ColorPalette.swift */; };
 		C45599E721A0779300055DFB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45599E621A0779300055DFB /* AppDelegate.swift */; };
 		C45599E921A0779300055DFB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45599E821A0779300055DFB /* ViewController.swift */; };
 		C45599EC21A0779300055DFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C45599EA21A0779300055DFB /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C4192A1921A242940066B75E /* ColorPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPalette.swift; sourceTree = "<group>"; };
 		C45599E321A0779300055DFB /* Draawa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Draawa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45599E621A0779300055DFB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45599E821A0779300055DFB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				C45599F221A0779300055DFB /* LaunchScreen.storyboard */,
 				C45599F521A0779300055DFB /* Info.plist */,
 				C45599ED21A0779300055DFB /* Draawa.xcdatamodeld */,
+				C4192A1921A242940066B75E /* ColorPalette.swift */,
 			);
 			path = Draawa;
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C45599EF21A0779300055DFB /* Draawa.xcdatamodeld in Sources */,
+				C4192A1A21A242940066B75E /* ColorPalette.swift in Sources */,
 				C45599E921A0779300055DFB /* ViewController.swift in Sources */,
 				C45599FC21A079F400055DFB /* DraawaView.swift in Sources */,
 				C45599E721A0779300055DFB /* AppDelegate.swift in Sources */,
