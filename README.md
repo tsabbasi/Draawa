@@ -2,7 +2,7 @@
 # Draawa
 
 ## Introduction
-A drawing app where you can draw using your finger using various colors from the color palette.
+A drawing app where you can draw with your finger using various colors from the color palette.
 
 This app was developed for educational purposes.
 
