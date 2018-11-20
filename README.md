@@ -1,5 +1,16 @@
 
-# References
+# Draawa
+
+## Introduction
+A drawing app where you can draw using your finger using various colors from the color palette.
+
+This app was developed for educational purposes.
+
+## Version History
+v1.0 11/17/2018
+- initial version
+
+## References
 
 ### Tutorials Used:
 - https://www.youtube.com/watch?v=ZP9tWkTx7p4
